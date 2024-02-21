@@ -45,7 +45,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
     if (!widget.isCreate) {
       correctPin = widget.pin;
     }
-
   }
 
   @override
@@ -83,7 +82,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
   ThemeMode themeMode = ThemeMode.dark;
 
   void onKeyboardButtonClicked(String val) {
-
     wrongPin = false;
     if (val == "X") {
       if (tController.text.isNotEmpty) {
@@ -109,7 +107,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
               widget.onConfirm(true, correctPin);
             }
           } else {
-
             wrongPin = true;
             tController.text = "";
             widget.onConfirm(false, correctPin);
@@ -122,7 +119,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
       if (widget.isCreate && input.length == 4) {
         if (isInConfirmMode) {
           if (input == correctPin) {
-
             pinsMatched = true;
             isInConfirmMode = false;
             widget.onConfirm(true, correctPin);
@@ -130,7 +126,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
             wrongPin = false;
             input = "";
           } else {
-
             tController.text = "";
             wrongPin = true;
             input = "";
@@ -143,7 +138,6 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
           input = "";
           isInConfirmMode = true;
         }
-
       }
     });
   }

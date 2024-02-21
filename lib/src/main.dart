@@ -23,10 +23,13 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const LaunchScreen(),
-          '/set_passcode': (context) =>  LockScreenHelper(isCreate: true, isEdit: false, isFromChangePasscode: false),
-          '/enter_passcode': (context) =>  LockScreenHelper(isCreate: false, isEdit: false, isFromChangePasscode: false),
-          '/change_passcode': (context) =>  LockScreenHelper(isCreate: false, isEdit: true, isFromChangePasscode : true),
-          '/forgot_password': (context) =>  const PinVerifyScreen(),
+          '/set_passcode': (context) => LockScreenHelper(
+              isCreate: true, isEdit: false, isFromChangePasscode: false),
+          '/enter_passcode': (context) => LockScreenHelper(
+              isCreate: false, isEdit: false, isFromChangePasscode: false),
+          '/change_passcode': (context) => LockScreenHelper(
+              isCreate: false, isEdit: true, isFromChangePasscode: true),
+          '/forgot_password': (context) => const PinVerifyScreen(),
         });
   }
 }
@@ -54,7 +57,10 @@ class LaunchScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>  LockScreenHelper(isCreate: true, isEdit: false, isFromChangePasscode: false)),
+                        builder: (context) => LockScreenHelper(
+                            isCreate: true,
+                            isEdit: false,
+                            isFromChangePasscode: false)),
                   );
                 },
                 child: const Text('Set Passcode')),
@@ -69,9 +75,7 @@ class LaunchScreen extends StatelessWidget {
                               onConfirm: (isAuthenticated, pin) {
                                 if (isAuthenticated) {
                                   Navigator.pop(context);
-                                } else {
-
-                                }
+                                } else {}
                                 handleForgotPassword(pin, context);
                               },
                               pin: passcode,

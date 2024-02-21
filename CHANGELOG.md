@@ -1,3 +1,11 @@
+## 0.0.5
+
+*  Added git repo URL 
+
+## 0.0.4
+
+*  Added home page to pubspec.yaml & fixed formatting issues
+
 ## 0.0.3
 
 *  Fixed formatting issues

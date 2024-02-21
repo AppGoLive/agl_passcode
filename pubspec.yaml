@@ -1,7 +1,7 @@
 name: agl_passcode
 description: "This Flutter package provides an feature for creating a passcode , verify and change passcode."
-version: 0.0.3
-homepage: https://github.com/AppGoLive/agl-flutter-libs
+version: 0.0.5
+homepage: https://github.com/AppGoLive/agl_passcode.git
 
 environment:
   sdk: '>=3.2.2 <4.0.0'

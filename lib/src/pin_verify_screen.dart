@@ -245,7 +245,6 @@ class _OtpState extends State<PinVerifyScreen> {
         ));
   }
 
-
   Widget _textFieldOTP(
       {required bool first,
       last,
@@ -280,7 +279,6 @@ class _OtpState extends State<PinVerifyScreen> {
     );
   }
 
-
   void popScreen(BuildContext context) {
     SystemNavigator.pop();
   }
@@ -295,7 +293,6 @@ class _OtpState extends State<PinVerifyScreen> {
       if (call.method == methodName) {
         final String data = call.arguments;
         isVerified = jsonDecode(data)["verify"];
-
 
         if (isVerified == "success") {
           setState(() {
