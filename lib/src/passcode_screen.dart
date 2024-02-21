@@ -13,6 +13,14 @@ bool isInConfirmMode = false;
 
 bool pinsMatched = false;
 
+/*
+ Passcode screen is used to diaply passcode screen 
+*/
+/// [isCreate] is used to create new passcode
+/// [onConfirm] is used for getting the callback once the passcode created or validated
+/// [pin] actual pin to be passed to validated the passcode
+/// [isDarkTheme] to set the theme
+/// [isFromConfirm] to set whether it is confirm
 class PasscodeScreen extends StatefulWidget {
   const PasscodeScreen(
       {super.key,
@@ -81,6 +89,8 @@ class _PasscodeScreenState extends State<PasscodeScreen> {
 
   ThemeMode themeMode = ThemeMode.dark;
 
+  /// Handled the keyboard button click
+  /// [val] is the entered text value
   void onKeyboardButtonClicked(String val) {
     wrongPin = false;
     if (val == "X") {

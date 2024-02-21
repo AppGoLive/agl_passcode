@@ -8,6 +8,13 @@ import 'package:flutter/foundation.dart';
 
 var inChangePasscode = false;
 
+/*
+ LockScreenHelper is used to diaply passcode screen and save the passcode
+*/
+/// [isCreate] is used to create new passcode
+/// [isEdit] is used for modifiying the passcode
+/// [isFromChangePasscode] to check whether it is change passcode
+
 //ignore: must_be_immutable
 class LockScreenHelper extends StatefulWidget {
   LockScreenHelper(
