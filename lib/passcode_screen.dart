@@ -7,15 +7,14 @@ import 'package:agl_passcode/src/pin_circle.dart';
 import 'package:agl_passcode/src/secrets_config.dart';
 import 'package:agl_passcode/src/title_text.dart';
 import 'package:agl_passcode/src/secret_config.dart';
-import 'package:agl_passcode/src/strings.dart';
+import 'package:agl_passcode/strings.dart';
 
 bool isInConfirmMode = false;
 
 bool pinsMatched = false;
 
-/*
- Passcode screen is used to diaply passcode screen 
-*/
+/// Passcode screen is used to display passcode screen
+
 /// [isCreate] is used to create new passcode
 /// [onConfirm] is used for getting the callback once the passcode created or validated
 /// [pin] actual pin to be passed to validated the passcode

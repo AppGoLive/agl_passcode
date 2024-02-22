@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'constants.dart';
-import 'package:agl_passcode/src/passcode_screen.dart';
-import 'package:agl_passcode/src/strings.dart';
+import 'package:agl_passcode/passcode_screen.dart';
+import 'package:agl_passcode/strings.dart';
 import 'package:agl_passcode/src/secure_storage.dart';
 import 'package:flutter/foundation.dart';
 
 var inChangePasscode = false;
 
-/*
- LockScreenHelper is used to diaply passcode screen and save the passcode
-*/
+/// LockScreenHelper is used to display passcode screen and save the passcode
 /// [isCreate] is used to create new passcode
-/// [isEdit] is used for modifiying the passcode
+/// [isEdit] is used for modifying the passcode
 /// [isFromChangePasscode] to check whether it is change passcode
 
 //ignore: must_be_immutable

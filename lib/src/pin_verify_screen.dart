@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
-import 'constants.dart';
+import '../constants.dart';
 import 'dart:convert';
-import 'package:agl_passcode/src/strings.dart';
+import 'package:agl_passcode/strings.dart';
 import 'package:agl_passcode/src/title_text.dart';
 
 List<String> enteredOtp = List.filled(4, '', growable: false);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:agl_passcode/src/passcode_screen.dart';
+import 'package:agl_passcode/passcode_screen.dart';
 import 'package:agl_passcode/src/pin_verify_screen.dart';
-import 'package:agl_passcode/src/lock_screen_helper.dart';
-import 'package:agl_passcode/src/strings.dart';
+import 'package:agl_passcode/lock_screen_helper.dart';
+import 'package:agl_passcode/strings.dart';
 
 var passcode = "";
 

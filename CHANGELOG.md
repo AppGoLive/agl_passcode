@@ -1,3 +1,36 @@
+
+## 0.0.12
+
+* Code format changes
+
+## 0.0.11
+
+*  Import Changes
+*  ReadMe file changes 
+*
+
+## 0.0.10
+
+*  Library export class changes
+*
+
+## 0.0.9
+
+*  Library export class changes
+* 
+## 0.0.8
+
+*  Library config changes
+
+## 0.0.7
+
+*  Config changes
+
+## 0.0.6
+
+*  Changed git repo URL
+*  Added documentation 
+
 ## 0.0.5
 
 *  Added git repo URL 

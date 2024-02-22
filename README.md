@@ -1,6 +1,6 @@
 # Flutter - Passcode Screen
 
-This Flutter package provides an feature for creating a passcode , verify and change passcode.
+One stop Package which will provide Set Passcode, Verify Passcode and Change passcode implementation
 
 ## Installation
 
@@ -9,12 +9,12 @@ First add agl_passcode as a dependency in your pubspec.yaml file.
 and then import
 
 ```dart
-import 'package:agl_passcode/src/lock_screen_helper.dart';
+import 'package:agl_passcode/lock_screen_helper.dart';
  ```
 or
 
 ```dart
-import 'package:agl_passcode/src/passcode_screen.dart';
+import 'package:agl_passcode/passcode_screen.dart';
  ```
 
 ## Features
@@ -55,6 +55,7 @@ Below code provides the call backs once the new passcode is created so that user
         );
  ```
 
+![Alt text](/screenshots/create_passcode.png?raw=true "")
 
 
 #### Validate Passcode :
@@ -80,7 +81,7 @@ Using below code snippet, the passcode is validated by passing the correct passc
           isDarkTheme: true,
         );
  ```
-
+![Alt text](/screenshots/passcode_verify.png?raw=true "")
 
 #### Change Passcode :
 ```dart
@@ -100,7 +101,7 @@ or
           isDarkTheme: true,
         );
  ```
-
+![Alt text](/screenshots/change_passcode.png?raw=true "")
 
 #### Forgot Passcode :
 
