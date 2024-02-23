@@ -116,7 +116,7 @@ Below code snippet used to handle the forgot passcode flow
             
             if (pin == Strings.forgotPwdText) {
 
-               // handle forgot passcode flow here , like launching the   new screen or any businesslogic   
+               // handle forgot passcode flow here , like launching the   new screen or use pin_verify_screen.dart to launch in-built screen   
             }
             
           },
@@ -124,4 +124,6 @@ Below code snippet used to handle the forgot passcode flow
           isDarkTheme: true,
         );
  ```
+
+![Alt text](/screenshots/pin_verify.png?raw=true "")
 
