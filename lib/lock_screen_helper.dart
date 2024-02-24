@@ -116,9 +116,7 @@ class LockScreenHelperState extends State<LockScreenHelper> {
 
     return PopScope(
         canPop: true,
-        onPopInvoked: (didPop) {
-          SystemNavigator.pop();
-        },
+        onPopInvoked: (didPop) {},
         child: PasscodeScreen(
           isCreate: widget.isCreate,
           isFromConfirm: widget.isFromChangePasscode,
